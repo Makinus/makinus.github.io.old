@@ -1,4 +1,3 @@
-
 jQuery(document).ready(function($) {
 "use strict";
 
@@ -79,24 +78,20 @@ jQuery(document).ready(function($) {
         if( ferror ) return false; 
         else var str = $(this).serialize();		
             $.ajax({
-                type: "POST",
-                url: "contactform/contactform.php",
-                data: str,
-                success: function(msg){
-                   // alert(msg);
-                    if(msg == 'OK') {
-                        $("#sendmessage").addClass("show");			
-                        $("#errormessage").removeClass("show");	
-                    }
-                    else {
-                        $("#sendmessage").removeClass("show");
-                        $("#errormessage").addClass("show");
-                        $('#errormessage').html(msg);
-                    }
-                    
-                }
+                type: "POST",                
+				url: 'http://htmlservice.herokuapp.com/api/makinus/contact',				
+                data: str,                
+				success: function(data) {				                   
+                   $("#sendmessage").addClass("show");			
+                   $("#errormessage").removeClass("show");                 
+                },
+				error: function() {
+				   $("#sendmessage").removeClass("show");
+                   $("#errormessage").addClass("show");
+                   $('#errormessage').html("Error Occurred");
+				}
             });
         return false;
-    });
-
+    });	
+		
 });

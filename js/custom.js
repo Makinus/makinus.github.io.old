@@ -1,10 +1,8 @@
 /*global jQuery:false */
 jQuery(document).ready(function($) {
 "use strict";
-
 	
 		//add some elements with animate effect
-
 		$(".big-cta").hover(
 			function () {
 			$('.cta a').addClass("animated shake");
@@ -40,72 +38,85 @@ jQuery(document).ready(function($) {
 		
 		
 		//register/login form
-$(function () {
-    $('.button-checkbox').each(function () {
+	$(function () {
+		$('.button-checkbox').each(function () {
 
-        // Settings
-        var $widget = $(this),
-            $button = $widget.find('button'),
-            $checkbox = $widget.find('input:checkbox'),
-            color = $button.data('color'),
-            settings = {
-                on: {
-                    icon: 'glyphicon glyphicon-check'
-                },
-                off: {
-                    icon: 'glyphicon glyphicon-unchecked'
-                }
-            };
+			// Settings
+			var $widget = $(this),
+				$button = $widget.find('button'),
+				$checkbox = $widget.find('input:checkbox'),
+				color = $button.data('color'),
+				settings = {
+					on: {
+						icon: 'glyphicon glyphicon-check'
+					},
+					off: {
+						icon: 'glyphicon glyphicon-unchecked'
+					}
+				};
 
-        // Event Handlers
-        $button.on('click', function () {
-            $checkbox.prop('checked', !$checkbox.is(':checked'));
-            $checkbox.triggerHandler('change');
-            updateDisplay();
-        });
-        $checkbox.on('change', function () {
-            updateDisplay();
-        });
+			// Event Handlers
+			$button.on('click', function () {
+				$checkbox.prop('checked', !$checkbox.is(':checked'));
+				$checkbox.triggerHandler('change');
+				updateDisplay();
+			});
+			$checkbox.on('change', function () {
+				updateDisplay();
+			});
 
-        // Actions
-        function updateDisplay() {
-            var isChecked = $checkbox.is(':checked');
+			// Actions
+			function updateDisplay() {
+				var isChecked = $checkbox.is(':checked');
 
-            // Set the button's state
-            $button.data('state', (isChecked) ? "on" : "off");
+				// Set the button's state
+				$button.data('state', (isChecked) ? "on" : "off");
 
-            // Set the button's icon
-            $button.find('.state-icon')
-                .removeClass()
-                .addClass('state-icon ' + settings[$button.data('state')].icon);
+				// Set the button's icon
+				$button.find('.state-icon')
+					.removeClass()
+					.addClass('state-icon ' + settings[$button.data('state')].icon);
 
-            // Update the button's color
-            if (isChecked) {
-                $button
-                    .removeClass('btn-default')
-                    .addClass('btn-' + color + ' active');
-            }
-            else {
-                $button
-                    .removeClass('btn-' + color + ' active')
-                    .addClass('btn-default');
-            }
-        }
+				// Update the button's color
+				if (isChecked) {
+					$button
+						.removeClass('btn-default')
+						.addClass('btn-' + color + ' active');
+				}
+				else {
+					$button
+						.removeClass('btn-' + color + ' active')
+						.addClass('btn-default');
+				}
+			}
 
-        // Initialization
-        function init() {
+			// Initialization
+			function init() {
 
-            updateDisplay();
+				updateDisplay();
 
-            // Inject the icon if applicable
-            if ($button.find('.state-icon').length == 0) {
-                $button.prepend('<i class="state-icon ' + settings[$button.data('state')].icon + '"></i> ');
-            }
-        }
-        init();
-    });
-});
+				// Inject the icon if applicable
+				if ($button.find('.state-icon').length == 0) {
+					$button.prepend('<i class="state-icon ' + settings[$button.data('state')].icon + '"></i> ');
+				}
+			}
+			init();
+		});
+	});
 
+	//subscribe with us
+	$('button.btn-add').click(function() {	
+		var subscribeMail = $(".multiple-form-group").find("input[name='email']").val();		
+			$.ajax({
+                type: "POST",                
+				url: 'http://htmlservice.herokuapp.com/api/makinus/subscribe',				
+                data: {
+					'subscriberMail': subscribeMail
+				}				
+			}).always(function(){				
+				$(".multiple-form-group").find("input[name='email']").val('');
+			});
+	});		
 		
 		// tooltip
 		$('.social-network li a, .options_box .color a').tooltip();
