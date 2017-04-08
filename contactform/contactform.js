@@ -80,15 +80,20 @@ jQuery(document).ready(function($) {
             $.ajax({
                 type: "POST",                
 				url: 'http://htmlservice.herokuapp.com/api/makinus/contact',				
-                data: str,                
+                data: str,
+				beforeSend: function(){
+				   $('#loading').addClass("show").removeClass("hide");
+				},				
 				success: function(data) {				                   
                    $("#sendmessage").addClass("show");			
-                   $("#errormessage").removeClass("show");                 
+                   $("#errormessage").removeClass("show");     
+				   $('#loading').removeClass("show").addClass("hide");
                 },
 				error: function() {
 				   $("#sendmessage").removeClass("show");
                    $("#errormessage").addClass("show");
                    $('#errormessage').html("Error Occurred");
+				   $('#loading').removeClass("show").addClass("hide");
 				}
             });
         return false;
