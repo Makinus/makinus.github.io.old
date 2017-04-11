@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url>
+      <loc>http://makinus.com/</loc>
+      <lastmod>2017-04-07</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.9</priority>
+   </url>
+   
+   <url>
+      <loc>http://makinus.com/index.html</loc>
+      <lastmod>2017-04-07</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.9</priority>
+   </url>
+
+   <url>
+      <loc>http://makinus.com/404.html</loc>
+      <lastmod>2017-04-07</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.2</priority>
+   </url>
+
+   <url>
+      <loc>http://makinus.com/careers.html</loc>
+      <lastmod>2017-04-07</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   
+   <url>
+      <loc>http://makinus.com/consulting.html</loc>
+      <lastmod>2017-04-07</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
+   
+   <url>
+      <loc>http://makinus.com/contact.html</loc>
+      <lastmod>2017-04-07</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   
+   <url>
+      <loc>http://makinus.com/desktop.html</loc>
+      <lastmod>2017-04-07</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
+   
+   <url>
+      <loc>http://makinus.com/freeapps.html</loc>
+      <lastmod>2017-04-07</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
+   
+   <url>
+      <loc>http://makinus.com/portfolio.html</loc>
+      <lastmod>2017-04-07</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   
+   <url>
+      <loc>http://makinus.com/products.html</loc>
+      <lastmod>2017-04-07</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   
+   <url>
+      <loc>http://makinus.com/vision.html</loc>
+      <lastmod>2017-04-07</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+   </url>
+   
+   <url>
+      <loc>http://makinus.com/webapps.html</loc>
+      <lastmod>2017-04-07</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
+   
+   <url>
+      <loc>http://makinus.com/websitedesign.html</loc>
+      <lastmod>2017-04-07</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
+   
+   <url>
+      <loc>http://blogs.makinus.com/</loc>
+      <lastmod>2017-04-07</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
+
+</urlset>
