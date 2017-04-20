@@ -21,25 +21,12 @@
 /* ===================================
 1. General
 ==================================== */
-@font-face {
-  font-family: 'sansation_regular';
-  src: url('../fonts/sansation/Sansation_Regular.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/sansation/Sansation_Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/sansation/Sansation_Regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/sansation/Sansation_Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/sansation/Sansation_Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
-}
-
 body {
 	font-family:'Open Sans', Arial, sans-serif;
 	font-size:14px;
 	font-weight:300;
 	line-height:1.6em;
 	color:#656565;
-}
-
-p {
-	font-family:sansation_regular, 'Open Sans', Arial, sans-serif;
 }
 
 a:active {
@@ -51,7 +38,7 @@ a:active {
 }
 
 h1,h2, h3, h4, h5, h6 {
-	font-family: sansation_regular, 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight:700;
 	line-height:1.1em;
 	color:#666;
