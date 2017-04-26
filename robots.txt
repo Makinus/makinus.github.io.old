@@ -1,4 +1,5 @@
 User-agent: * 
 Disallow: /apps/ 
+Host: www.makinus.com
 
 Sitemap: http://makinus.com/sitemap.xml 
