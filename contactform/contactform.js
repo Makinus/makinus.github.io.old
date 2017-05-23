@@ -79,7 +79,7 @@ jQuery(document).ready(function($) {
         else var str = $(this).serialize();		
             $.ajax({
                 type: "POST",                
-				url: 'http://htmlservice.herokuapp.com/api/makinus/contact',				
+				url: 'https://htmlservice.herokuapp.com/api/makinus/contact',				
                 data: str,
 				beforeSend: function(){
 				   $('#loading').addClass("show").removeClass("hide");

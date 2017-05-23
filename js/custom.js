@@ -109,7 +109,7 @@ jQuery(document).ready(function($) {
 		var subscribeMail = $(".multiple-form-group").find("input[name='email']").val();		
 			$.ajax({
                 type: "POST",                
-				url: 'http://htmlservice.herokuapp.com/api/makinus/subscribe',				
+				url: 'https://htmlservice.herokuapp.com/api/makinus/subscribe',				
                 data: {
 					'subscriberMail': subscribeMail
 				}				
